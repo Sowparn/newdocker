@@ -1,5 +1,6 @@
 FROM openjdk:8
-COPY Helloworld.Java
-RUN javac HelloWorld.java
-CMD java HelloWorld
+# WORKDIR helloworld
+COPY Helloworld.java .
+RUN javac Helloworld.java
+CMD java Helloworld
 
